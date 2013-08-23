@@ -1,12 +1,1 @@
-body { background-image:url(backgroundtexture.jpg); background-repeat: repeat-y; 
-font-family:"Cambria"; text-align:center; }
-
-#side { float:left; width:20%; height:100% }
-
-a { font-family:"Cambria"; font-size:0.75em; color:#FFFFFF }
-
-div { font-size:2.0em; }
-
-img { width: 50%; }
-
-ul { width: 15%; float: left; }
+body { background-image:url(backgroundtexture.jpg); background-repeat: repeat-y;  font-family:"Cambria"; text-align:center; }

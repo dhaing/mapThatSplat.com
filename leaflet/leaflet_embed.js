@@ -6,15 +6,15 @@ var splatlayers=[];
 function initmap() {
     // set up the map
     map = new L.Map('map');
-    
+
     // create the tile layer with correct attribution
     var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     var osmAttrib='Map data © OpenStreetMap contributors';
-    var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 12, attribution: osmAttrib});		
-    
+    var osm = new L.TileLayer(osmUrl, {minZoom: 6, maxZoom: 14, attribution: osmAttrib});
+
     map.setView(new L.LatLng(52.5, -1.8),9);
     map.addLayer(osm);
-    
+
     ajaxRequest = getXmlHttpObject();
     askForSplats();
 }
@@ -61,5 +61,3 @@ function removeSplats() {
     }
     splatlayers=[];
 }
-
-
